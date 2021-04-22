@@ -4,7 +4,6 @@ from flask_sqlalchemy import SQLAlchemy
 app=Flask(__name__)
 
 app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///todos.sqlite3'
-app.config['SECRET_KEY']="sandeep pabbu"
 
 db=SQLAlchemy(app)
 
