@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 app=Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI']='postgres://skqhxjbvovcuth:80a59a4db046be90beb378f00ecdcb504c6a7c1b13d8c135a91d9657e58046e2@ec2-54-167-152-185.compute-1.amazonaws.com:5432/d3mquckdv85u3i'
+app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///todos.sqlite3'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False
 
 db=SQLAlchemy(app)
